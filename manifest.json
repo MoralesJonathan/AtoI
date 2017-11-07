@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "A to I",
+  "description": "This extension helps fix the iPhone bug by changing A[?]s to Is.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "http://*/*", "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
